@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+    <div class="containerCalc calculator">
+        <form>
+                <div class="col">
+                    <input id ="value" class="value" type="text">
+                </div>
+        </form>
+
+                <div class="col">
+                    <button class="press" id="num7"  onclick="getNumbers(7)">7</button>
+                    <button class="press" id="num8" onclick="getNumbers(8)">8</button>
+                    <button class="press" id="num9" onclick="getNumbers(9)">9</button>
+                    <button class="press" id="div" onclick="getOperator('/')">/</button>
+                    <button class="press" id="squr" onclick="getOperator('^')">^</button>
+                </div>
+
+                <div class="col">
+                    <button class="press" id="num6" onclick="getNumbers(6)">6</button>
+                    <button class="press" id="num5" onclick="getNumbers(5)">5</button>
+                    <button class="press" id="num4" onclick="getNumbers(4)">4</button>
+                    <button class="press" id="mult" onclick="getOperator('*')">*</button>
+                    <button class="press" id="remind" onclick="getOperator('%')">%</button>
+                </div>
+
+                <div class="col">
+                    <button class="press" id="num3" onclick="getNumbers(3)">3</button>
+                    <button class="press" id="num2" onclick="getNumbers(2)">2</button>
+                    <button class="press" id="num1" onclick="getNumbers(1)">1</button>
+                    <button class="press" id="min" onclick="getOperator('-')">-</button>
+                    <button class="press" id="delete" onclick="deleteValue()">D</button>
+                </div>
+
+                <div class="col">
+                    <button class="press" id="num0" onclick="getNumbers(0)">0</button>
+                    <button class="press" id="del" onclick="getOperator('.')">.</button>
+                    <button class="press" id="plus" onclick="getOperator('+')">+</button>
+                    <button class="press" id="equl" onclick="equleOperator()">=</button>
+                    <button class="press" id="clear" onclick="clearValue()">C</button>
+                </div>
+    </div>
+    <script src="js/calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+/* Operation */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.calculator{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+.value{
+    width: 563px;
+    height: 55px;
+    border: 2px solid pink;
+    border-radius: 10px;
+}
+.press{
+    padding: 20px 40px;
+    width: 110px;
+    height: 100px;
+    margin-top:5px;
+    border: 4px solid pink;
+    background-color: gray;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    border-radius: 10px;
+}
+.press:hover{
+    border: 4px solid gray;
+    background-color: pink;
+}
+
+
+/* StopWatch */
+.containerwatch{
+    width: 100%;
+    background-color: black;
+}
+.watchName{
+    font-size: 80px;
+    color: #fff;
+    font-weight: bold;
+}
+.watch{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+.displayValue{
+    color: #fff;
+    font-size: 100px;
+}
+.btnstart{
+    padding: 20px 70px;
+    border: 4px solid #fff;
+    background-color: black;
+    color: #fff;
+    font-size: 25px;
+}
+.btnstart:hover{
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+}
+
+/* BMI Styling */
+body {
+    font-family: "Nunito", sans-serif;
+}
+.box {
+    min-width: 400px;
+    background: #eaeaea;
+    text-align: center;
+    position: relative;
+    margin-bottom: 150px;
+}
+h1 {
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+}
+.content {
+    padding: 0 40px;
+}
+.input {
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 28px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.input label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+.input input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #0044ff;
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Nunito", sans-serif;
+}
+button#calculate {
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    background: #0044ff;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+button#calculate:hover {
+    background: #4f7df9;
+}
+.result {
+    padding: 30px 20px;
+}
+.result p {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.result #result {
+    font-size: 36px;
+    font-weight: 900;
+    color: #4f7df9;
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+#comment {
+    color: #4f7df9;
+    font-weight: 800;
+}
+.big-boxess .box {
+    background: rgb(196 199 244);
+    padding: 25px;
+    width: 50%;
+    margin: auto;
+}
+.big-boxess .box .content {
+    padding-top: 10px;
+}
+.box-title {
+    font-size: 30px;
+    font-family: var(--main-font);
+    padding-top: 15px;
+}
+@media (max-width: 1045px) {
+    .big-boxess .box {
+    width: calc(50% - 10px);
+    margin: auto;
+    }
+}
+
+@media (max-width: 702px) {
+    .big-boxess .box {
+    width: 100%;
+    }
+}
+
+/*  Curenty*/
+input {
+    padding: 10px;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+  }
+  .input2{
+    background-color: palevioletred;
+  }
+  .big-boxess2{
+    width: 50%;
+    margin: auto;
+  }
+  .big-boxess2 .box2 {
+    background: #e8bfe8;
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+    text-align: center;
+  }
+  .pad{
+    padding-bottom: 40px;
+  }
+  .amount{
+    border: 2px solid black;
+  }
+  #result2{
+    font-size: 36px;
+    font-weight: 900;
+    color: palevioletred;
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+  }
+  @media (max-width: 1045px) {
+    .big-boxess2 .box2 {
+      /* width: calc(50% - 10px); */
+      margin: 10px 0;
+    }
+    
+  }
+  @media (max-width: 702px) {
+    .big-boxess2 .box2 {
+      width: 100%;
+    }
+    .big-boxess2  {
+      width: 100%;
+    }
+    
+  }
